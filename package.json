@@ -1,22 +1,15 @@
 {
   "name": "ultimate-force",
   "version": "1.0.0",
-  "description": "Ultimate Force Game",
+  "description": "Ultimate Force",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/frank-borkin/ultimate-force.git"
-  },
+  "repository": "https://github.com/frank-borkin/ultimate-force.git",
   "author": "Frank Borkin",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/frank-borkin/ultimate-force/issues"
-  },
-  "homepage": "https://github.com/frank-borkin/ultimate-force#readme",
   "devDependencies": {
-    "electron": "^2.0.2"
+    "electron": "^2.0.0"
   }
 }

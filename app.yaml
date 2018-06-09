@@ -1,0 +1,40 @@
+runtime: php55
+api_version: 1
+threadsafe: true
+default_expiration: "7d"
+skip_files:
+- ^(.*/)?#.*#$
+- ^(.*/)?.*~$
+- ^(.*/)?.*\.py[co]$
+- ^(.*/)?.*/RCS/.*$
+- ^(.*/)?\..*$
+- node_modules/
+
+handlers:
+- url: /css
+  static_dir: css
+  mime_type: text/css
+- url: /images
+  static_dir: images
+- url: /js
+  static_dir: js
+  mime_type: application/javascript
+- url: /levels
+  static_dir: levels
+- url: /sounds
+  static_dir: sounds
+- url: /favicon.ico
+  static_files: favicon.ico
+  upload: favicon.ico
+- url: /googleb3594c9f081299c1.html
+  static_files: googleb3594c9f081299c1.html
+  upload: googleb3594c9f081299c1.html
+- url: /robots.txt
+  static_files: robots.txt
+  upload: robots.txt
+- url: /sitemap.xml
+  static_files: sitemap.xml
+  upload: sitemap.xml
+- url: /.*
+  script: index.php
+

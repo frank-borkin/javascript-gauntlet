@@ -147,7 +147,7 @@ Gauntlet = function() {
 
     runner: {
       fps:   FPS,
-      stats: true
+      stats: false
     },
 
     state: {
